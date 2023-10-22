@@ -2,9 +2,12 @@
 
 ## Descarga e Instalación:
 ### Para clonar el repositorio se deberán de realizar los siguientes pasos: 
+* Como requisito previo, se debe de tener instalado y actualizado Python, en mi caso, la version 3.12.0, así como pip a la versión 23.2.1
 * Escribir en la terminal: `git clone https://github.com/Frederic2047/redarbor.git`.  
 * Una vez clonado el repositorio, lo abrimos a través del IDE correspondiente (Visual Studio Code, Pycharm...).
-
+* Dentro del IDE, abrimos una terminal nueva e instalamos Selenium: `pip install selenium`
+* Instalamos pytest: `pip install -U pytest`
+* Instalamos la extensión --html para los reportes: `pip install pytest-html`
 ## Estructura del Proyecto:
 * `.idea/` Contiene configuraciones internas del editor.
 * `pytests_cache/` Contiene archivos con logs "en caché" de pruebas fallidas. Se crean varias carpetas como esta en varios puntos del proyecto. Aparecerá tras ejecutar la primera vez la prueba.
@@ -20,7 +23,7 @@
     * `__init__.py` Archivo .py vacío, necesario para lanzar los tests.
     * `test_search_job_offer.py` Contiene todas las pruebas del proyecto.
 * `venv` Contiene archivos del entorno virtual.
-* `pytest.ini` Archivo desde el cual se configura qué clases, funciones y archivos se ejecutan al lanzar la prueba.
+* `pytest.ini` Archivo desde el cual se configura qué clases, funciones y archivos se ejecutan al lanzar la prueba. Pytest vendrá aqui a buscar la configuración y los markers (en caso de haberlos).
 * `README.md` Información acerca de la descarga y puesta en marcha del proyecto.
 
 
