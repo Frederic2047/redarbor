@@ -7,7 +7,7 @@
 
 ## Estructura del Proyecto:
 * `.idea/` Contiene configuraciones internas del editor.
-* `pytests_cache/` Contiene archivos con logs "en caché" de pruebas fallidas. Se crean varias carpetas como esta en varios puntos del proyecto.
+* `pytests_cache/` Contiene archivos con logs "en caché" de pruebas fallidas. Se crean varias carpetas como esta en varios puntos del proyecto. Aparecerá tras ejecutar la primera vez la prueba.
 * `reports/` Contiene las capturas de pantalla que se generan en caso de que los assertions fallen. También contiene el report.html que es un informe detallado al ejecutarse el test al completo, el cual nos muestra si ha sido "Pass" o "Fail" y porqué. 
 * `src/` 
     * `PageObject/` Contiene archivos de prueba. 
